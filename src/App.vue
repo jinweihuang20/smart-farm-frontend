@@ -1,9 +1,5 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <router-view />
 </template>
 
 <style>
@@ -12,7 +8,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #ffffff;
+  background-color: #2c3e50;
+  padding: 28px;
+}
+
+@media screen and (max-height: 500px) {
+  #app {
+    padding-top: 65px;
+  }
 }
 
 nav {
@@ -26,5 +30,12 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #2c3e50;
 }
 </style>
